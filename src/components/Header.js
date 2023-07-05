@@ -10,7 +10,7 @@ function Header() {
             A <span>Resume</span> that stands out!
           </p>
           <p className={styles.heading}>
-            Make your own resume. <span>It's free</span>
+            Make your own resume at <span> ResumeCraft</span>
           </p>
         </div>
         <div className={styles.right}>
