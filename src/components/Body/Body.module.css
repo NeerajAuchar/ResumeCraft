@@ -5,15 +5,17 @@
   align-items: center;
   gap: 30px;
   padding-top: 0;
+  
 }
 
 .heading {
   font-weight: 500;
   font-size: 2.1rem;
+
 }
 
 .toolbar {
-  width: 100%;
+  max-width: 50rem; /*for mobile 390 max-width is 27 rem and laptop 50rem*/
   display: flex;
   gap: 40px;
   justify-content: space-between;
@@ -22,8 +24,8 @@
 
 .colors {
   display: flex;
-  gap: 20px;
-  padding: 0 30px;
+  gap: 20px;   /*for mobile gap is 4px and laptop 20px*/
+  padding: 0 20px; /* for mobile 0px  and laptop 20px*/
 }
 
 .colors .color {
@@ -61,5 +63,54 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
+ 
+}
+
+@media (max-width : 390px){
+  .toolbar {
+    max-width: 27rem; /*for mobile 390 max-width is 27 rem*/
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .colors {
+    display: flex;
+    gap: 4px;   /*for mobile gap is 4px and laptop 20px*/
+    padding: 0 0px; /* for mobile 0px */
+  }
+}
+
+
+@media (max-width : 425px){
+  .toolbar {
+    max-width: 35rem; /*for mobile 390 max-width is 27 rem*/
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .colors {
+    display: flex;
+    gap: 10px;   /*for mobile gap is 4px and laptop 20px*/
+    padding: 0 10px; /* for mobile 10px */
+  }
+}
+
+@media (max-width : 375px){
+  .toolbar {
+    max-width: 29rem; /*for mobile 390 max-width is 27 rem*/
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .colors {
+    display: flex;
+    gap: 5px;   /*for mobile gap is 4px and laptop 20px*/
+    padding: 0 10px; /* for mobile 10px */
+  }
 }

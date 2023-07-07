@@ -2,18 +2,22 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    min-width: 3rem; 
   }
+  
   
   label {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1rem;    /* for 390 mobile size font is 1.3rem and for laptop 1rem */
   }
+
+  
   
   input {
     border: 1px solid #cccccc;
     outline: none;
     padding: 10px 12px;
-    font-size: 1rem;
+    font-size: 1rem; /*for 390 mobile size input font is 1.2rem and for lapto 1rem */
     border-radius: 5px;
   }
   
@@ -23,5 +27,43 @@
   
   input:focus {
     border: 1px solid #239ce2;
+  }
+
+  @media (max-width : 390px){
+
+    label {
+      font-weight: 500;
+      font-size: 1.3rem;    /* for 390 mobile size font is 1.3rem and for laptop 1rem */
+    }
+  
+    
+    
+    input {
+      border: 1px solid #cccccc;
+      outline: none;
+      padding: 10px 12px;
+      font-size: 1.2rem; /*for 390 mobile size input font is 1.2rem and for lapto 1rem */
+      border-radius: 5px;
+    }
+
+  }
+
+  @media (max-width : 425px){
+
+    label {
+      font-weight: 500;
+      font-size: 1.2rem;    /* for 425 mobile size font is 1.2rem and for laptop 1rem */
+    }
+  
+    
+    
+    input {
+      border: 1px solid #cccccc;
+      outline: none;
+      padding: 10px 12px;
+      font-size: 1.2rem; /*for 425 mobile size input font is 1.2rem and for lapto 1rem */
+      border-radius: 5px;
+    }
+
   }
   
